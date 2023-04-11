@@ -48,21 +48,21 @@
 # 385916 -> yes
 # 123456 -> no
 
-from random import randint # Подсмотрел в интернетах
-number = randint(99999, 1000000)
-print(F"Your ticket is {number}.")
-firstHalf = number // 1000
-secondHalf = number % 1000
-sumFH = firstHalf // 100 + firstHalf // 10 % 10 + firstHalf % 10
-print(sumFH)
-sumSH = secondHalf // 100 + secondHalf // 10 % 10 + secondHalf % 10
-print(sumSH)
-if sumFH == sumSH:
-    print (f"The ticket {number} is lucky, huray!")
-else:
-    print(f"The ticket {number} is not lucky, sorry!")
+# from random import randint # Подсмотрел в интернетах
+# number = randint(99999, 1000000)
+# print(F"Your ticket is {number}.")
+# firstHalf = number // 1000
+# secondHalf = number % 1000
+# sumFH = firstHalf // 100 + firstHalf // 10 % 10 + firstHalf % 10
+# print(f'The sum of the first half of ticket is {sumFH}')
+# sumSH = secondHalf // 100 + secondHalf // 10 % 10 + secondHalf % 10
+# print(f'The sum of the second half of ticket is {sumSH}')
+# if sumFH == sumSH:
+#     print (f"The ticket {number} is lucky, huray!")
+# else:
+#     print(f"The ticket {number} is not lucky, sorry!")
 
-
+#________________________________________________________________________________________________________
 
 # Задача 8: Требуется определить, можно ли от шоколадки размером n × m долек отломить k долек, 
 # если разрешается сделать один разлом по прямой между дольками
@@ -72,3 +72,16 @@ else:
 
 # 3 2 4 -> yes
 # 3 2 1 -> no
+
+# print("Enter the quantity pieces of a chocolate of first side")
+# width = int(input()) 
+# print("Enter the quantity pieces of a chocolate of second side")
+# length = int(input()) 
+# print("Enter the quantity would you want to get by one try.")
+# quantity= int(input()) 
+# if quantity % width == 0 or quantity % length == 0:
+#     print(f'You can divide the chocolate dimensions {width} x {length} on {quantity} pieces by one try.')
+# else:
+#     print(F'You cannot divide the chocolate on {quantity} pieces by one try.')
+
+#________________________________________________________________________________________________________
