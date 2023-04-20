@@ -10,12 +10,22 @@
 
 # # Решение
 
-# # coins = int(input())
-# # count = 0
-# # for i in range(coins):
-# #     i = int(input())
-# #     if i == 0:
-# #         count += 1
-# # print(f'The minimal counts of the coins are {count}')
-
+coins = int(input('Hi, enter the amount of coins, please: '))
+count = 0
+count2 = 0
+print('Heads are 0, tails are 1.')
+for i in range(coins):
+    i = int(input('Please, enter the digit: '))
+    if i == 0:
+        count += 1
+    if i == 1:
+        count2 +=1
+print(count, count2)        
+if count > count2:
+    print(f'The minimal counts to flip over of the coins are {(count - count2)}')
+if count2 > count:
+    print(f'The minimal counts to flip over of the coins are {(count2 - count)}')
+else:
+    print('The counts to flip is equally')
+        
 # # _______________________________________________________________________________________
