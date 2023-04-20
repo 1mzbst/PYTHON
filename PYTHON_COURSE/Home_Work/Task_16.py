@@ -10,6 +10,7 @@
 #     -> 1
 
 #Решение
+
 array = []
 count = 0
 numN = int(input('Enter the length of array(N): '))
@@ -19,9 +20,12 @@ for i in range(1,numN+1):
     array.append(i)
 print(array)
 find_num = int(input('Enter the digit what you want to find: '))  # искомое значение X
-for j in array:
-    if j == find_num:
-        count+=1
-print(f'The number of repeated digit is {count}')
+# for j in array:
+#     if j == find_num:
+#         count+=1
+# print(f'The number of repeated digit is {count}')
+
+# result = [i for i in array if i == find_num] # comprehension style
+# print(f'The number of repeated digit is {len(result)}')
 
 #______________________________________________________________________________________________________________________
