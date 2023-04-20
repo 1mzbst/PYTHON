@@ -9,3 +9,17 @@
 #     1 2 3 4 5
 #     6
 #     -> 5
+
+#Решение
+
+array = []
+count = 0
+numN = int(input('Enter the length of array(N): '))
+print('Enter the digits of the list: ')
+for i in range(1,numN+1):
+    i = int(input())
+    array.append(i)
+print(array)
+find_num = int(input('Enter the digit what you want to find: '))  # искомое значение X
+
+#___________________________________________________________________________________________
