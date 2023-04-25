@@ -10,3 +10,20 @@
 # Напишите программу для нахождения максимального числа ягод, которое может собрать за один заход собирающий модуль,
 # находясь перед некоторым кустом заданной во входном файле грядки.
 
+# Решение
+
+# bush_num = 6
+# bush = [b for b in range(1,bush_num)]
+# print(bush)
+# collector = 3
+# berries = 0
+
+
+# for i in range(-collector, len(bush) - collector):
+#     print([bush[i+j] for j in range(collector)])
+#     berr_count = sum(bush[i+j] for j in range(collector))
+
+#     if berr_count > berries:
+#         berries = berr_count
+# print(berr_count)
+

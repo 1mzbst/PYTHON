@@ -13,6 +13,8 @@ first_n = int(input('Enter the count of first set of numbers: '))
 second_n = int(input('Enter the count of second set of numbers: '))
 
 
+# Ручной ввод
+
 # for i in range(first_n):
 #     i = int(input('Number of the first set, please: '))
 #     first_set.add(i)
@@ -25,16 +27,6 @@ second_n = int(input('Enter the count of second set of numbers: '))
 
 first_list = []
 second_list = []
-
-# for i in range(first_n):
-#     i = randint(1,15)
-#     first_set.add(i)
-# print(first_set)
-
-# for i in range(second_n):
-#     i = randint(1,15)
-#     second_set.add(i)
-# print(second_set)
 
 print('Lists')
 for i in range(first_n):
