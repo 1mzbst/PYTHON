@@ -14,9 +14,9 @@ def power (a,b):
     elif b == 0:
         return 1
     elif b == 1:
-        return 0
+        return a
     else:
-        return power(a ,a ** (b - 1))
+        return a * power(a,b-1)
 
 result = power(3,5)
 print(result)
