@@ -18,13 +18,29 @@
 # print(an)
 
 
-first_number = 1
-range_number = 5
+#Решение
+
+
+first_number = int(input('Enter the first number '))
+
+range_number = int(input('Enter the range of list '))
+
+difference = int(input('Enter the difference '))
+
 last_number = 1
-difference = 2
+
 new_list = []
+
+
 for i in range(range_number):
+
     new_list.append(first_number + (last_number - 1) * difference)
+
     # an = first_number + (last_number - 1) * difference
+
     last_number += 1
+
+
 print(new_list)
+
+#_____________________________________________________________________________________________
