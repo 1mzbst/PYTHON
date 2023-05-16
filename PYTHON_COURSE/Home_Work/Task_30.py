@@ -1,5 +1,5 @@
 # Задача 30:  Заполните массив элементами арифметической прогрессии. Её первый элемент(a1),
-# разность(d) и количество элементов(n) нужно ввести с клавиатуры. 
+# разность(d) и количество элементов(n) нужно ввести с клавиатуры.
 # Формула для получения n-го члена прогрессии: an = a1 + (n-1) * d.
 # Каждое число вводится с новой строки.
 
@@ -10,16 +10,21 @@
 # Output:
 # 1, 3, 5, 7, 9
 
+# a1 = 1
+# n = 5
+# d = 2
 
-# an = first_number + (last_number - 1) * difference
-
-# def arifm_progres (first_number:int, difference: int, last_number:int):
-#     for i in range(first_number,last_number,difference):  # это и есть прогрессия
-#         print(i)
+# an = a1 + (n-1) * d
+# print(an)
 
 
-first_number = int(input())
-print(first_number)
-# last_number = int(input())
-# difference = int(input())
-# arifm_progres(first_number,difference,last_number)
+first_number = 1
+range_number = 5
+last_number = 1
+difference = 2
+new_list = []
+for i in range(range_number):
+    new_list.append(first_number + (last_number - 1) * difference)
+    # an = first_number + (last_number - 1) * difference
+    last_number += 1
+print(new_list)
