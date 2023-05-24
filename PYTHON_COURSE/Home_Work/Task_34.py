@@ -12,3 +12,24 @@
 # **Ввод:** пара-ра-рам рам-пам-папам па-ра-па-да
 #     **Вывод:** Парам пам-пам
 
+
+#РЕШЕНИЕ
+
+
+song = 'пара-ра-рам рам-пам-папам па-ра-па-да'
+phras_list = song.split()
+print(phras_list)
+
+
+def find_count_of_slog (index: str):
+    count = 0
+    for i in index:
+        if i == 'а':
+            count +=1
+    return count
+
+count_list = list(map(find_count_of_slog, phras_list))
+print(count_list)
+
+# def rithm(song: str):
+#     new_list = song.split()
