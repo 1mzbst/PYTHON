@@ -16,20 +16,46 @@
 #РЕШЕНИЕ
 
 
-song = 'пара-ра-рам рам-пам-папам па-ра-па-да'
-phras_list = song.split()
-print(phras_list)
+def find_count_of_slog (source_list: str):
 
+    """Считает количество гласных в каждом элементе переданного списка"""
 
-def find_count_of_slog (index: str):
     count = 0
-    for i in index:
+
+    for i in source_list:
+
         if i == 'а':
+
             count +=1
+
     return count
 
-count_list = list(map(find_count_of_slog, phras_list))
-print(count_list)
 
-# def rithm(song: str):
-#     new_list = song.split()
+def check_for_rithm(song: str):
+
+    """Проверяет есть ли в строке ритм"""
+
+    #Сортируем переданную строку на элементы
+
+    phras_list = song.split()
+
+    #Приминяем счетчик гласных к каждому элементу 
+
+    list_with_song = list(map(find_count_of_slog, phras_list))
+
+    #Проверяем на равенство каличества гласных в каждом элементе
+    
+    rithm = all(i == list_with_song[0] for i in list_with_song)
+
+    if rithm:
+
+        return print('Парам пам-пам')
+    
+    else:
+
+        return print('Пам парам')
+    
+
+song = 'пара-ра-рам рам-пам-папам па-ра-па-да'
+
+check_for_rithm(song)
