@@ -33,9 +33,20 @@ def search_and_rewrite() -> None:
         data = file.read()
     contact_to_find = input('Введите, что хотите заменить: ')
     result = search(data, contact_to_find)
-    new_name = input('Введите ФИО для замены: ')
-    new_telephone = input('Введите номер телефона для замены: ') 
-    new_data = data.replace()
+    print(f"Вот эта строка будет заменена: {''.join(result)}")
+    answer = int(input("Введите 1 если Да, 2 если Нет: "))
+    if answer == 1:
+        new_name = input('Введите ФИО для замены: ')
+        new_telephone = input('Введите номер телефона для замены: ') 
+        new_data = data.replace(''.join(result), (f'{new_name} | {new_telephone}') )
+        with open('book.txt', 'w', encoding='utf-8') as file:
+            file.write(new_data)
+        print('Справочник изменён.')
+    elif answer == 2:
+        return search_and_rewrite()
+    else: 
+        return search_and_rewrite()
+    # print(new_data)
     
 
                 
