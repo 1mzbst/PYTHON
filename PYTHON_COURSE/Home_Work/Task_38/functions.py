@@ -34,7 +34,7 @@ def search_and_rewrite() -> None:
     contact_to_find = input('Введите, что хотите заменить: ')
     result = search(data, contact_to_find)
     print(f"Вот эта строка будет заменена: {''.join(result)}")
-    answer = int(input("Введите 1 если Да, 2 если Нет: "))
+    answer = int(input("Введите 1 если Да, 2 если Нет, 3 или любую другую цифру если передумали делать замену -> "))
     if answer == 1:
         new_name = input('Введите ФИО для замены: ')
         new_telephone = input('Введите номер телефона для замены: ') 
@@ -44,8 +44,10 @@ def search_and_rewrite() -> None:
         print('Справочник изменён.')
     elif answer == 2:
         return search_and_rewrite()
+    elif answer == 3:
+        exit
     else: 
-        return search_and_rewrite()
+        show_data()
     # print(new_data)
     
 
